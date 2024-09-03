@@ -51,3 +51,31 @@
 * Right click on the Project and select Deployment Assembly
 * Click "Add" and select "Java Build Path Entries" and Select "Struts2" which was previously created list of external JARs of User Libraries
 * Click Apply and close.
+
+### Main Components of the struts 2 MVC Framework
+* Action Class
+* JSP
+* Struts 2 XML
+
+### Struts 2 XML
+* Controls the execution flow of requests
+* Input: URL
+* Needs to map to:
+    * Action Classes
+    * JSPs
+* URL to Action Class
+For Examples:
+    URL: http://mywebapp/getTutorial
+    Action Class: TutorialAction
+
+    URL: http://mywebapp/getBooks
+    Action Class: BookAction
+
+    URL: http://mywebapp/getSeminars
+    Action Class: SeminarAction
+
+<img src="../images/4.png" width="auto" height="auto" alt="Introduction to MVC" />
+
+### Which Method?
+* Default method of Action class is execute()
+* Other methods can be configured
