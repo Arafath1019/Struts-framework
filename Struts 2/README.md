@@ -29,3 +29,25 @@
 * It is an MVC Framework
 * Version 2
 * Gives us prebuilt classes for MVC that we can use / extend
+
+### Setting up
+* Download struts 2:  https://struts.apache.org/index.html
+* Download and install ECLIPSE IDE: https://www.eclipse.org/downloads/
+* While installing Eclipse IDE, select Eclipse IDE for Enterprise Java and Web Developers option
+
+### Creating a new struts project
+* From "New", select "other", select "Dynamic Web Project" from "Web" and click next.
+* Write project name, set project location, set target runtime (Example Apache Tomcat v7.0) if set previously, otherwise, click new runtime, select any apache tomcat vx.x from Apache, Browse Tomcat installation directory if already installed otherwise Download and install to a location and keep other settings as default and click next and next
+* Update content directory to web if needed and check generate web.xml deployment descriptor and click on Finish
+
+### Adding User libraries
+* Right click on project and click properties
+* Click on "Java Build Path" and select "Libraries" tab and select "Modulepath" and click Add Library
+* Select "User Library" and click on next
+* Click "User Libraries" and new click "new" and write a User library name and click ok
+* Select "Strust2" and click on "Add External JARs"
+* Select all the JARs from the struts downloaded folders lib directory
+* Click on apply and finish and close all the modals
+* Right click on the Project and select Deployment Assembly
+* Click "Add" and select "Java Build Path Entries" and Select "Struts2" which was previously created list of external JARs of User Libraries
+* Click Apply and close.
