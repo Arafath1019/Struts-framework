@@ -79,3 +79,11 @@ For Examples:
 ### Which Method?
 * Default method of Action class is execute()
 * Other methods can be configured
+
+### Which JSP?
+* JSP displayed depends on the result of the method execution
+* Same action class may need to show different JSPs
+* Action class result 'code' to JSP: 
+    * Code: Success, JSP: success.jsp
+    * Code: Failure, JSP: error.jsp
+    * Code: NoSession, JSP: login.jsp
