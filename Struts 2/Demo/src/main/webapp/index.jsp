@@ -1,0 +1,80 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+
+<style>
+.main-container {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-container {
+	padding: 50px;
+	border-radius: 25px;
+	width: 30%;
+	box-shadow: 0px 30px 50px #c4d2e2;
+	background: #ffffff;
+}
+
+.field-groups {
+	display: flex;
+	flex-direction: column;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.margin-bottom {
+	margin-bottom: 20px;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.input {
+	background-color: #118cf1;
+	width: 50%;
+	padding: 5px;
+	border-radius: 25px;
+	border: none;
+}
+
+.input-wrapper {
+	display: flex;
+	justify-content: center;
+}
+</style>
+</head>
+<body>
+	<div class="main-container">
+		<div class="login-container">
+			<h1 class="text-center margin-bottom">Login System</h1>
+			<form class="form-container" action="next" method="post">
+				<div class="field-groups">
+					<label>User Id</label> <input name="userId" type="text"
+						placeholder="Please enter user id" />
+				</div>
+				<div class="field-groups">
+					<label>Password</label> <input name="password" type="password"
+						placeholder="Please enter password" />
+				</div>
+				<div class="input-wrapper">
+					<input class="input" type="submit" value="CLICK">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
