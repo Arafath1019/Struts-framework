@@ -89,3 +89,20 @@ For Examples:
     * Code: Success, JSP: success.jsp
     * Code: Failure, JSP: error.jsp
     * Code: NoSession, JSP: login.jsp
+
+### Namespaces
+In the struts2 framework, a namespace is a way to organize actions into logical modules. Each namespace has its own identifying prefix and can have its own "help" or "menu" action. 
+```
+<package name="default" namespace="/tutorials" extends="struts-default">
+    <action name="getTutorial" class="com.nextpage.Home">
+        <result name="success">/success.jsp</result>
+        <result name="failure">/failure.jsp</result>
+    </action>
+</package>
+```
+Struts2 URL construction
+```
+http://localhost:8080/Struts2Starter/tutorials/getTutorial.action
+
+http://<server>:<port>/<webapp>/<namespace>/<action-name>.action
+```
