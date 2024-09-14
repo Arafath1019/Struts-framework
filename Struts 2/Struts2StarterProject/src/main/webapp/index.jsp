@@ -43,17 +43,35 @@
 	gap: 15px;
 }
 
-.input {
+.button {
 	background-color: #118cf1;
 	width: 50%;
-	padding: 5px;
+	padding: 10px 0px;
 	border-radius: 25px;
 	border: none;
+	cursor: pointer;
 }
+
+.button:hover{
+	background-color: #000;
+	color: #fff;
+	font-weight: bold;
+}
+
 
 .input-wrapper {
 	display: flex;
 	justify-content: center;
+}
+
+.input-field {
+	margin-top: 6px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.label {
+	font-size: 20px;
 }
 </style>
 </head>
@@ -63,15 +81,15 @@
 			<h1 class="text-center margin-bottom">Login System</h1>
 			<form class="form-container" action="next" method="post">
 				<div class="field-groups">
-					<label>User Id</label> <input name="userId" type="text"
+					<label class="label">User Id</label> <input class="input-field" name="userId" type="text"
 						placeholder="Please enter user id" />
 				</div>
 				<div class="field-groups">
-					<label>Password</label> <input name="password" type="password"
+					<label class="label">Password</label> <input class="input-field" name="password" type="password"
 						placeholder="Please enter password" />
 				</div>
 				<div class="input-wrapper">
-					<input class="input" type="submit" value="CLICK">
+					<button class="button" type="submit">CLICK</button>
 				</div>
 			</form>
 		</div>
