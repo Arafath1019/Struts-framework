@@ -34,6 +34,8 @@
 * Download struts 2:  https://struts.apache.org/index.html
 * Download and install ECLIPSE IDE: https://www.eclipse.org/downloads/
 * While installing Eclipse IDE, select Eclipse IDE for Enterprise Java and Web Developers option
+* To open the eclipse workspace directory from mac, click "shift + command + h"
+* Inside the eclipse workspace, paste apache tomcat server files
 
 ### Creating a new struts project
 * From "New", select "other", select "Dynamic Web Project" from "Web" and click next.
