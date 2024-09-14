@@ -4,21 +4,15 @@
         "https://struts.apache.org/dtds/struts-6.0.dtd">
       
 <struts>
-
     <package name="basicstruts" namespace="/" extends="struts-default">
-    
     	<default-action-ref name=""/>
     	<action name="">
             <result>/index.jsp</result>
         </action>
 
-
-
         <action name="next" class="com.nextpage.Home" method="execute">
             <result name="success">/home.jsp</result>
             <result name="failure">/index.jsp</result>
         </action>
-
     </package>
-
 </struts>

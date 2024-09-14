@@ -2,6 +2,8 @@ package com.nextpage;
 
 public class Home {
 	private String userId;
+	private String password;
+	
 	public String getUserId() {
 		return userId;
 	}
@@ -17,8 +19,6 @@ public class Home {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	private String password;
 
 	public String execute()
 	{
